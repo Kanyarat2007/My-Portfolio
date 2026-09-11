@@ -32,7 +32,7 @@ function ImageCarousel({ images, title }: { images: string[]; title: string }) {
   return (
     <div className="relative w-full rounded-xl overflow-hidden bg-ink-900 mb-5">
       <img
-        src={images[current]}
+        src={`${import.meta.env.BASE_URL}${images[current].replace(/^\/+/, '')}`}
         alt={`${title} — ภาพที่ ${current + 1}`}
         className="w-full h-48 object-cover object-top transition-opacity duration-300"
       />

@@ -61,25 +61,25 @@ export default function Contact() {
             </a>
 
             {/* CV */}
-<a
-  href="/CV-Kanyarat.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="glass-card p-5 flex items-center gap-4 hover:border-white/10 transition-all hover:-translate-y-0.5 group"
->
-  <div className="p-3 rounded-xl bg-accent-500/10 border border-accent-500/20 text-accent-400 group-hover:scale-110 transition-transform">
-    <FileText size={20} />
-  </div>
+            <a
+              href={`${import.meta.env.BASE_URL}images/projects/CV-Kanyarat.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-5 flex items-center gap-4 hover:border-white/10 transition-all hover:-translate-y-0.5 group"
+            >
+              <div className="p-3 rounded-xl bg-accent-500/10 border border-accent-500/20 text-accent-400 group-hover:scale-110 transition-transform">
+                <FileText size={20} />
+              </div>
 
-  <div>
-    <p className="text-xs text-ink-400 uppercase tracking-wide font-semibold mb-0.5">
-      CV / Resume
-    </p>
-    <p className="text-sm text-white font-medium">
-      ดู CV ของฉัน
-    </p>
-  </div>
-</a>
+              <div>
+                <p className="text-xs text-ink-400 uppercase tracking-wide font-semibold mb-0.5">
+                  CV / Resume
+                </p>
+                <p className="text-sm text-white font-medium">
+                  ดู CV ของฉัน
+                </p>
+              </div>
+            </a>
 
             {PROFILE.location && (
               <div className="glass-card p-5 flex items-center gap-4">
